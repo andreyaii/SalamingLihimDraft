@@ -1,31 +1,19 @@
 package Core;
 
-import Classes.*;
 import Races.*;
 
 public class CharacterBuilder {
-    public static PlayerCharacter build(String name, int raceChoice, int classChoice) {
+    public static PlayerCharacter build(String name, int raceChoice) {
         Race race = null;
-        ClassArchetype cls = null;
 
-        if (raceChoice == 1) race = new Tikbalang();
-        else if (raceChoice == 2) race = new Kapre();
-        else if (raceChoice == 3) race = new Manananggal();
-
+        // Simplified selection logic
         if (raceChoice == 1) {
-            if (classChoice == 1) cls = new Archer();
-            else if (classChoice == 2) cls = new Spearman();
+            race = new Tikbalang();
         } else if (raceChoice == 2) {
-            if (classChoice == 1) cls = new Gunman();
-            else if (classChoice == 2) cls = new Druid();
-        } else if (raceChoice == 3) {
-            if (classChoice == 1) cls = new Mage();
-            else if (classChoice == 2) cls = new Assassin();
+            race = new Kapre();
         }
 
-        return new PlayerCharacter(name, race, cls);
+        // Return the player with just the name and the race object
+        return new PlayerCharacter(name, race);
     }
 }
-
-
-

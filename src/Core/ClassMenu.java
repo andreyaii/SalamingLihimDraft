@@ -8,7 +8,6 @@ public class ClassMenu {
         Map<Integer, String> races = new LinkedHashMap<>();
         races.put(1, "Tikbalang");
         races.put(2, "Kapre");
-        races.put(3, "Manananggal");
         return races;
     }
 

@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PlayerCharacter {
-    public String name, race, charClass;
+    public String name, race;
     private int hp, mana, defense = 5;
     private Race raceType;
-    public ClassArchetype classType;
     private final int manaRegen = 10;
     private int armorLevel = 0;
     public int maxHp;
@@ -30,14 +29,12 @@ public class PlayerCharacter {
     private int skillCooldown = 0;
     private int specialCooldown = 2;
 
-    public PlayerCharacter(String name, Race raceType, ClassArchetype classType) {
+    public PlayerCharacter(String name, Race raceType) {
         this.name = name;
         this.raceType = raceType;
-        this.classType = classType;
         this.race = raceType.getRaceName();
-        this.charClass = classType.getClassName();
-        this.maxHp = raceType.getBaseHp() + classType.getBonusHp();
-        this.maxMana = raceType.getBaseMana() + classType.getBonusMana();
+        this.maxHp = raceType.getBaseHp();
+        this.maxMana = raceType.getBaseMana();
         this.hp = maxHp;
         this.mana = maxMana;
         this.level = 1;
@@ -60,19 +57,20 @@ public class PlayerCharacter {
     }
 
     public void useSkill(Enemy target) {
-
         if (skillCooldown > 0) {
-            System.out.println("Skill is on cooldown for " + skillCooldown + " more turn(s).");
+            System.out.println("Ability is on cooldown for " + skillCooldown + " more turn(s).");
             return;
         }
-        if (mana < classType.getSkillManaCost()) {
-            System.out.println("Not enough mana to use skill.");
+        if (mana < raceType.getSkillManaCost()) {
+            System.out.println("Not enough mana!");
             return;
         }
-        mana -= classType.getSkillManaCost();
+
+        mana -= raceType.getSkillManaCost();
         if (mana < 0) mana = 0;
-        classType.useSkill(name, target);
-        skillCooldown = classType.getSkillCooldown();
+
+        raceType.useSkill(name, target);
+        skillCooldown = raceType.getSkillCooldown();
     }
 
     public void useSpecial(Enemy target) {
@@ -80,14 +78,14 @@ public class PlayerCharacter {
             System.out.println("Special is on cooldown for " + specialCooldown + " more turn(s).");
             return;
         }
-        if (mana < classType.getSpecialManaCost()) {
+        if (mana < raceType.getSpecialManaCost()) {
             System.out.println("Not enough mana to use special.");
             return;
         }
-        mana -= classType.getSpecialManaCost();
+        mana -= raceType.getSpecialManaCost();
         if (mana < 0) mana = 0;
-        classType.useSpecial(name, target);
-        specialCooldown = classType.getSpecialCooldown();
+        raceType.useSpecial(name, target);
+        specialCooldown = raceType.getSpecialCooldown();
     }
 
 //    public int void regenerateMana() {
@@ -123,7 +121,6 @@ public class PlayerCharacter {
         System.out.printf("                                                           ────────────────────────────────\n");
         System.out.printf("                                                             >> Name      : %s\n", name);
         System.out.printf("                                                             >> Race      : %s\n", race);
-        System.out.printf("                                                             >> Class     : %s\n", charClass);
         System.out.printf("                                                           ────────────────────────────────\n");
         System.out.printf("                                                             >> HP        : %d/%d\n", hp, maxHp);
         System.out.printf("                                                             >> Mana      : %d/%d\n", mana, maxMana);
@@ -206,10 +203,6 @@ public class PlayerCharacter {
     }
 
     // ----- Mana, hp, and Defense setters/getters -----
-
-   /* public int getMaxMana() {
-        return raceType.getBaseMana() + classType.getBonusMana();
-    }*/
 
     public void setMana(int mana) {
         this.mana = Math.max(0, Math.min(mana, maxMana));
@@ -310,6 +303,10 @@ public class PlayerCharacter {
         maxHp = (int) Math.round(maxHp * Math.pow(1.10, 1));
         hp = maxHp;
         mana = maxMana = (int) Math.round(maxMana * Math.pow(1.10, 1));
+    }
+
+    public void boostSpecialPower(int amount) {
+        raceType.increaseSpecialDamage(amount);
     }
 }
 
