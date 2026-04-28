@@ -23,13 +23,13 @@ public class PlayerSelection {
 
         while (true) {
             try {
-                System.out.println("                                                         ╔════════════════════════════════════╗");
-                System.out.println("                                                         ║   -- LEGENDS OF THE SHADOWED --    ║");
-                System.out.println("                                                         ║         >> REALM RACES <<          ║");
-                System.out.println("                                                         ╠════════════════════════════════════╣");
-                System.out.println("                                                         ║ Tikbalang   → HP 95  | Mana 80     ║");
-                System.out.println("                                                         ║ Kapre       → HP 100 | Mana 70     ║");
-                System.out.println("                                                         ╚════════════════════════════════════╝");
+                System.out.println("                                                         ╔═════════════════════════════════════╗");
+                System.out.println("                                                         ║    -- LEGENDS OF THE SHADOWED --    ║");
+                System.out.println("                                                         ║          >> REALM RACES <<          ║");
+                System.out.println("                                                         ╠═════════════════════════════════════╣");
+                System.out.println("                                                         ║ Tikbalang   → HP 180  | Mana 140    ║");
+                System.out.println("                                                         ║ Kapre       → HP 185 | Mana 155     ║");
+                System.out.println("                                                         ╚═════════════════════════════════════╝");
                 System.out.println("                                                                  Choose your race:");
                 Map<Integer, String> races = ClassMenu.getRaceOptions();
                 for (Map.Entry<Integer, String> entry : races.entrySet()) {

@@ -19,11 +19,6 @@ public class PlayerCharacter {
         return inventory;
     }
 
-    // Pet support
-    private Pet pet;
-    private boolean hasPet = false;
-    private int petHealCounter = 0;
-    private int petFoodUsed = 0;
 
     // Cooldown counters
     private int skillCooldown = 0;
@@ -230,37 +225,6 @@ public class PlayerCharacter {
 
     public void setDefense(int defense) {
         this.defense = defense;
-    }
-
-    // ----- Pet system -----
-
-    public boolean hasPet() { return hasPet; }
-
-    public Pet getPet() { return pet; }
-
-    public void setPet(Pet pet) {
-        this.pet = pet;
-        this.hasPet = true;
-    }
-
-    public void petHeal() {
-        if (hasPet && pet != null) {
-
-            petHealCounter++;
-            if (petHealCounter >= 2) {
-                setHp(hp + pet.getHealingPower());
-                System.out.println("🐾 Your pet heals you for " + pet.getHealingPower() + " HP!\n");
-                petHealCounter = 0;
-            }
-        }
-    }
-
-    public int getPetFoodUsed() {
-        return petFoodUsed;
-    }
-
-    public void incrementPetFoodUsed() { // Keep track of Pet upgrades max of 4
-        petFoodUsed++;
     }
 
     public void buyArmor() {

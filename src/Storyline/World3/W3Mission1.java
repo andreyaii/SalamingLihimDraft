@@ -42,22 +42,15 @@ public class W3Mission1 {
         sc.nextLine();
         System.out.println("Andrea: We should search our surroundings for clues and any signs of life.");
         sc.nextLine();
-        System.out.println("You nod and begin to search for any clues and materials that could be of help.\nAs you walk down the mountain, you notice claw marks on the trees.\nYou and Andrea begin to cautiously follow the trail and eventually end up with a small clearing with a fallen tree in the middle.\nYou scan the area and see a small, ragged satchel beside the tree trunk. You inspect it and find Recovery potions and a pack of pet feed.");
+        System.out.println("You nod and begin to search for any clues and materials that could be of help.\nAs you walk down the mountain, you notice claw marks on the trees.\nYou and Andrea begin to cautiously follow the trail and eventually end up with a small clearing with a fallen tree in the middle.\nYou scan the area and see a small, ragged satchel beside the tree trunk. You inspect it and find Recovery potions.");
         sc.nextLine();
 
         Item hpPotion = new Item("Health Potion", 0, "Restores HP to full", ItemType.HEALTH);
         Item manaPotion = new Item("Mana Potion", 0, "Restores Mana to full", ItemType.MANA);
-        Item petFood = new Item("Pet Food", 0, "Increases pet's healing power", ItemType.PET_FOOD);
 
         player.addItem(hpPotion);
         player.addItem(manaPotion);
 
-        if (player.hasPet()) {
-            player.getPet().increaseHealingPower(5);
-            System.out.println("🍖 You found Pet Food! Your pet's healing power has increased by 5 HP!");
-        } else {
-            System.out.println("🍖 You found Pet Food, but you don't have a pet. The item is discarded.");
-        }
 
         System.out.println("🧪 You found a Health Potion and a Mana Potion!");
         System.out.println();

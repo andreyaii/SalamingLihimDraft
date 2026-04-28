@@ -84,9 +84,6 @@ public class BattleManager {
                 enemies.remove(targetIndex);
             }
 
-            if(!enemies.isEmpty()){
-                player.petHeal();
-            }
 
             for (Enemy enemy : enemies) {
                 if (enemy.isAlive()) {
