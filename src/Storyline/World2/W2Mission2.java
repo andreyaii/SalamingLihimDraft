@@ -20,7 +20,7 @@ public class W2Mission2 {
         System.out.println("                   ======================================================================================================================");
         scan.nextLine();
         System.out.println("As you search for medicinal herbs, you hear footsteps approaching you, and you see an old man dressed in leather and leaves, matching the colors of the marsh. ");
-        System.out.println("A bag slings across his chest and his leather belt, carrying herbs and a potion bottle. ");
+        System.out.println("A bag is slung across his chest and his leather belt, carrying herbs and a potion bottle. ");
         scan.nextLine();
         System.out.println(player.name + ": Who are you?");
         scan.nextLine();
@@ -42,7 +42,7 @@ public class W2Mission2 {
         scan.nextLine();
         System.out.println("A sudden shriek cuts through the marshlands, high and guttural.\nFrom the treeline, a shape emerges—elongated limbs, a mouth split too wide, dripping with black rot and fresh blood.\nAn Aswang, its body shifting grotesquely between forms, crawls toward you with murderous intent. Its eyes lock not on you, but on the Tambalan.");
         scan.nextLine();
-        System.out.println("Tambalan: It comes for me. They know I aided you, and they would see me dead for that crime. If you wish for your friend to live, you must keep me alive.");
+        System.out.println("Tambalan: It comes for me. If you wish for your friend to live, you must keep me alive.");
         scan.nextLine();
         System.out.println("The Aswang snarls, wings unfurling with a crack of sinew. It takes to the sky and the shadows unnaturally bend around its sinister form.");
         DialogueUtils.pause();

@@ -149,7 +149,7 @@ public class W3Mission1 {
                 sc.nextLine();
                 System.out.println("Kheila reaches into her tattered cloak and pulls out a worn, ancient scroll, its edges blackened as if burned.");
                 sc.nextLine();
-                System.out.println("Kheila: This contains a clue to find the Babaylan’s best-kept secret-\na weapon that has the power to destroy even the strongest of them all.");
+                System.out.println("Kheila: This contains a clue to find the Babaylan’s best-kept secret--\na weapon that has the power to destroy even the strongest of them all.");
             } else {
                 System.out.println("Skill issue. Please try again.");
             }

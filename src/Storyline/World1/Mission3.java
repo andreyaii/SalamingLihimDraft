@@ -19,14 +19,14 @@ public class Mission3 {
         scan.nextLine();
 
         //System.out.println();
-        System.out.println("Enlightened with the clues from the Information Guild, you hurry to the Dark Forest, you hear stomping and the sound of creaky wagon wheels turning through the soil.");
+        System.out.println("Enlightened with the clues from the Information Guild, you hurry to the Dark Forest. Soon, you hear stomping and the sound of creaky wagon wheels turning through the soil.");
         DialogueUtils.pause();
         System.out.println("There you see tiyanaks moving the wagon full of unconscious bodies of enkantos and diwatas.");
         System.out.println("They are led by the giant entity, the Bungisngis.");
         System.out.println("You move towards the group quietly, hiding behind the bodies of trees, and observe what they might do.");
         DialogueUtils.pause();
         System.out.println();
-        System.out.println("The Bungisngis, still smiling, looks at the tiyanaks in disappointment and turns its eyes upon the bodies of the diwatas.");
+        System.out.println("The Bungisngis smiles wide and turns its eyes upon the bodies of the diwatas.");
         System.out.println("You watch in nervous anticipation as the Bungisngis walks towards the wagon,");
         System.out.println("and ready yourself with your weapon as the giant reaches out to the wagon and raises the limp body of a diwata.");
         System.out.println("The Bungisngis opens its mouth, salivating at the sight of its meal.");

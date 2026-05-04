@@ -105,7 +105,7 @@ public class Mission2 {
 
 
 
-        System.out.println("\nInside the Information Guild, the air hums shelves groan under the weight of ancient scrolls. Watchful slitted eyes follow you as you step forward.");
+        System.out.println("\nInside the Information Guild, the air hums and shelves groan under the weight of ancient scrolls. Watchful slitted eyes follow you as you step forward.");
         System.out.println("An elderly Tamawo scribe greets you. And though you can see the centuries evident in the lines of his face, you still have to fight the disarming ");
         System.out.println("allure of his pale, handsome face and sparkling skin.");
         scan.nextLine();
@@ -125,7 +125,7 @@ public class Mission2 {
         System.out.println("Scribe: The forest is alive. And it does not forgive trespassers easily.");
         scan.nextLine();
         System.out.println("The chamber grows colder as the candles flicker low.");
-        System.out.println("Outside, the wind howls, carrying with it faint echoes of laughter—low, booming, and unending.");
+        System.out.println("Outside, the wind howls, carrying with it faint echoes of booming laughter.");
         System.out.println();
         System.out.println("Your next step is clear. The Dark Forest awaits.");
         DialogueUtils.pause();

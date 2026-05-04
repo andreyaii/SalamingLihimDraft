@@ -21,7 +21,7 @@ public class W2Mission5 {
         System.out.println("The chamber opens wide before you like a cavernous maw, a cathedral of decay..");
         sc.nextLine();
 
-        System.out.println("Hanging from the ceiling are cocoons – live pulsating sacks of flesh that drip thick ichor onto the floor.\nThe air hums faintly, a constant low buzzing that seems to come from everywhere and nowhere.");
+        System.out.println("Hanging from the ceiling are pulsating cocoons of flesh that drip thick ichor onto the floor.\nThe air hums faintly, a constant low buzzing that seems to come from everywhere and nowhere.");
         sc.nextLine();
 
         System.out.println("And then… a voice.\nSmooth at first, but sickly sweet.\nThe kind of tone that curls around your spine like a whisper from a nightmare.");
