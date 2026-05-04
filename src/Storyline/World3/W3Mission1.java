@@ -22,27 +22,10 @@ public class W3Mission1 {
         sc.nextLine();
 
         System.out.println("After persevering through Mogul’s suffocating darkness for days on end, Mt. Kanatuan’s gentle sunrise leaves you nearly blinded.");
-        System.out.println("The world here feels impossibly alive. A breathtaking contrast to the graveyard realm you’ve just escaped from.");
-        System.out.println("Where Biringan City gleams with its golden towers and Mogul festers in its decay, Mt. Kanatuan blooms as a living paradise\nradiant enough to make even the Garden of Eden blush with envy.");
-        System.out.println("Birdsong fills the air like a hymn of rebirth. Tiny sparrows dart between canopies teeming with fruit, while jeweled insects\nhover lazily above blossoms painted in every hue of creation.");
-        System.out.println("Sampaguita, ylang-ylang, and wild orchids weave their fragrance together in a perfume of divine creation.");
-        System.out.println("Even the snakes, their scales glistening like ribbons of silk, coil peacefully among dew-kissed branches, basking in the warmth of the newborn sun.");
-        sc.nextLine();
-
-        System.out.println("Tired from the journey, you and Andrea sit down for a while, savoring the rare peace.");
-        sc.nextLine();
-
-        player.rest();
-        System.out.println();
-        DialogueUtils.pause();
-
-        System.out.println("You breathe deeply, and for a fleeting moment, the pain, exhaustion, and fear of Mogul seem to melt away.");
-        sc.nextLine();
-        System.out.println("But then, beneath the floral sweetness, something unsettles your senses.\nA faint metallic tang of blood, sharp and intrusive, mingles with the thick syrupy scent of venom.\nThe paradise shimmers, but the air carries a quiet warning- Mt. Kanatuan may shine like heaven, but even paradise can wear the mask of hell.");
         sc.nextLine();
         System.out.println("Andrea: We should search our surroundings for clues and any signs of life.");
         sc.nextLine();
-        System.out.println("You nod and begin to search for any clues and materials that could be of help.\nAs you walk down the mountain, you notice claw marks on the trees.\nYou and Andrea begin to cautiously follow the trail and eventually end up with a small clearing with a fallen tree in the middle.\nYou scan the area and see a small, ragged satchel beside the tree trunk. You inspect it and find Recovery potions.");
+        System.out.println("You and Andrea begin to cautiously follow the trail and eventually end up in a small clearing with a fallen tree in the middle.\nYou scan the area and see a small, ragged satchel beside the tree trunk. ");
         sc.nextLine();
 
         Item hpPotion = new Item("Health Potion", 0, "Restores HP to full", ItemType.HEALTH);
@@ -58,14 +41,9 @@ public class W3Mission1 {
         sc.nextLine();
         System.out.println(player.name + ": Indeed. We should go explore the mountain some more.");
         sc.nextLine();
-        System.out.println("As you and Andrea walk further into the heart of the mountain, she grips your hand, effectively halting your progress.\nShe gestures towards the thickening cloud of mist in front of you.");
+        System.out.println("But your blood runs cold when you're faced with four tiyanaks, their sharp black teeth glinting with viscera. ");
         sc.nextLine();
-        System.out.println("Andrea: That's enchanted mist. It will boil the skin off your bones. Whatever you do, don't let it touch you.");
-        sc.nextLine();
-        System.out.println("Instinctively, you take a step back, moving away from the deadly mist.\nYou trust that Andrea would know what she's talking about. She is a diwata, after all.\nShe would feel most at home in the forest.");
-        System.out.println("But your blood runs cold when you hear the chilling wails of infants behind you.\nThe crying soon morphs into cruel, mischievous laughter, and you come face-to-face with the bane of your kind's existence- a tiyanak.");
-        System.out.println("Backing away, you hiss when the mist comes into contact with just a small patch of your skin.\nThe tiyanak's laughter rises in pitch when more of its friends come out of the bushes to join it.\nThree of them now stand before you, their sharp black teeth glinting with viscera. Andrea raises her blessed steel,\nand you know exactly what she's thinking- you have no choice but to fight these creatures.");
-        sc.nextLine();
+        System.out.println("[You have encountered 3 Tiyanaks. Please choose a target and an attack]");
         List<Enemy> enemies = EnemyFactory.spawnEnemies(EnemyType.TIYANAK, 3);
         BattleManager battle = new BattleManager();
         boolean survived = battle.startBattle(player, enemies, 3, false);
@@ -84,7 +62,7 @@ public class W3Mission1 {
             player.rest();
             DialogueUtils.pause();
 
-            System.out.println("But after only an hour or two, your peaceful respite is interrupted by the sound of footsteps from a distance.");
+            System.out.println("But after only a few minutes, your peaceful respite is interrupted by the sound of footsteps from a distance.");
             sc.nextLine();
             System.out.println("???: Over there!!! Spread out and search the area. That traitor couldn't have gone far.");
             sc.nextLine();
@@ -146,7 +124,8 @@ public class W3Mission1 {
 
             System.out.println("Commander: Intruders! Stop them!");
             sc.nextLine();
-
+            System.out.println("[You encountered 2 Babaylans. Please choose a target and an attack.]");
+            sc.nextLine();
             List<Enemy> enemies2 = EnemyFactory.spawnEnemies(EnemyType.BABAYLANS, 2);
             BattleManager battle2 = new BattleManager();
             survived = battle2.startBattle(player, enemies2, 3, false);
@@ -162,12 +141,7 @@ public class W3Mission1 {
                 sc.nextLine();
                 System.out.println(player.name + ": You’re safe now. You’re Kheila, right?");
                 sc.nextLine();
-                System.out.println("Kheila: I.. I thought I was done for. Thank you. I don’t know who you are, but the Babaylans will hunt you for this.");
-                sc.nextLine();
-                System.out.println("Andrea: Let them. We’re looking for them anyway. Why were they after you?");
-                sc.nextLine();
-                System.out.println("Kheila: I was one of them. I helped with their rituals until I learned what they were truly planning." +
-                                   "They want to merge the powers of Mogul and the mortal world so they can make\nthe Babaylan Mistress the ruler of Biringan City and control all the powers and riches it has to offer.\nI tried to warn the others, but they called me a traitor.");
+                System.out.println("Kheila: Yes, thank you for rescuing me. I was one of them.\nI helped with their rituals until I learned that they want to merge the powers of Mogul\nand the mortal world so they can make the Babaylan Mistress the ruler of Biringan City.\nI tried to warn the others, but they called me a traitor.");
                 sc.nextLine();
                 System.out.println(player.name + ": Tria mentioned something. A “Babaylan’s plan.” So it’s true, then?");
                 sc.nextLine();

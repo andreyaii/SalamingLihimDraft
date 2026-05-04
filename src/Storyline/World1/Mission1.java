@@ -20,33 +20,26 @@ public class Mission1 {
         System.out.println("???: Someone help! Please! A thief has stolen my merchandise!");
         scan.nextLine();
 
-        System.out.println("Without even taking a second to think about it, you bolt after the two duwendes clearly trying to make a run for it.");
+        System.out.println("You find the source of the scream and, without even taking a second to think about it, you bolt after five duwendes clearly trying to make a run for it.\n");
         scan.nextLine();
 
-        System.out.println("[You encountered 2 duwende.]");
+        System.out.println("[You encountered 3 duwendes. Choose a target and an attack]");
         System.out.println();
         DialogueUtils.pause();
 
-        List<Enemy> enemies = EnemyFactory.spawnEnemies(EnemyType.DUWENDE, 2);
+        List<Enemy> enemies = EnemyFactory.spawnEnemies(EnemyType.DUWENDE, 3);
         BattleManager battle = new BattleManager();
         boolean survived = battle.startBattle(player, enemies, 1, false);
         scan.nextLine();
         player.resetCooldowns();
-        System.out.println("\n\nSean: Thank you so much. I owe you my livelihood. I wouldn’t have made it through the end of this month without that merchandise.");
-        scan.nextLine();
-        System.out.println("Sean: Especially with the darkening atmosphere of the city– oop! Ishouldn’thavesaidthat.");
+        System.out.println("\n\nSean: Thank you so much. I owe you my livelihood. Tell me, what would you like in return?");
         scan.nextLine();
 
-        System.out.println(player.name + ": I’m actually investigating that. If you want to repay me, tell me everything you know.");
+        System.out.print(player.name + ": I’m actually investigating a bunch of disappearances around the city. Do you know anything about that?\n");
         scan.nextLine();
 
-        System.out.println("Sean: Well, I am indebted to you, so I shall tell you all that I can. I heard that there was an increasing number of Enkantos and Diwatas missing.");
-        scan.nextLine();
-        System.out.println("Sean: The word on the street is that some sort of giant is behind it. One can only hope it isn't for a sacrificial ritual.");
-        scan.nextLine();
-        System.out.println("Sean: If you want to know more, you might want to head to the Information Guild.");
-        scan.nextLine();
-        System.out.println("Sean: My name is Sean. Tell them I sent you, and they might give you more information.");
+        System.out.println("Sean: Well, the word on the street is that some sort of giant is kidnapping Enkantos and Diwatas. If you want to know more, you might want to\n" +
+                        "       head to the Information Guild. My name is Sean. Tell them I sent you.");
         scan.nextLine();
 
         System.out.println("You agree and go on your way.");

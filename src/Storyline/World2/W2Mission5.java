@@ -18,7 +18,7 @@ public class W2Mission5 {
         System.out.println("    ======================================================================================================================================================");
         System.out.println();
 
-        System.out.println("The chamber opens wide before you like a cavernous maw, a cathedral of decay.\nJagged pillars rise from the ground, formed from fused bone and dried sinew.\nThe walls are slick with black resin, glistening like tar.\nDim candles burn at uneven intervals, their weak flames dancing atop puddles of wax and congealed blood.");
+        System.out.println("The chamber opens wide before you like a cavernous maw, a cathedral of decay..");
         sc.nextLine();
 
         System.out.println("Hanging from the ceiling are cocoons – live pulsating sacks of flesh that drip thick ichor onto the floor.\nThe air hums faintly, a constant low buzzing that seems to come from everywhere and nowhere.");
@@ -36,7 +36,7 @@ public class W2Mission5 {
         System.out.println("Andrea raises her glowing blade in the direction of the voice, and you feel your pulse skyrocket at the sight of the creature before you.");
         sc.nextLine();
 
-        System.out.println("Perched atop a massive nest-like structure is a gigantic wasp-like creature, her slick black carapace glistening in the candlelight.\nHer head is that of a woman, as pale and beautiful as the moon, but her arms are bladed and jointed like those of a mantis.\nHer lower body writhes with veined wings and a stinger that glows faintly red.\nHer smile widens unnaturally as she leans forward, her mandibles clicking.");
+        System.out.println("Before you is a gigantic wasp-like creature with a beautiful woman’s face.\nHer lower body writhes with veined wings and a stinger that glows faintly red.\nHer smile widens unnaturally as she leans forward, her mandibles clicking.");
         sc.nextLine();
 
         System.out.println(player.name + ": Who are you? Are you the leader of the Aswangs?");
@@ -78,6 +78,9 @@ public class W2Mission5 {
             return false;
         }
 
+        System.out.println("Hah! You're quite capable. But you do not hold even a candle to my strength.");
+        sc.nextLine();
+        System.out.println("[You are facing Tria, the Master of Mogul. Choose an attack]");
         survived = battle.startBattle(player, bosses, 2, true);
         if (!survived) {
             return false;
@@ -105,10 +108,7 @@ public class W2Mission5 {
         System.out.println(player.name + ": I think we should. Even if Tria lied, this is our only clue.");
         sc.nextLine();
 
-        System.out.println("You hear a thud and a yelp from the corner of the chamber.\nYou and Andrea immediately look in the direction the noise came from.\nYou saw an Aswang hurriedly escaping through a side passage. Both of you immediately chase after the Aswang.");
-        sc.nextLine();
-
-        System.out.println("You chase it through the narrow, winding tunnel, your footsteps pounding against stone.\nWhen you finally catch up, Andrea’s blade flashes in the dark, and the Aswang falls lifeless at your feet.");
+        System.out.println("You make your way towards the end of the tunnel, and the night air lingers thick\nand cold as you emerge into another realm just beyond Mogul.");
         sc.nextLine();
 
         System.out.println(player.name + ": Where are we?");

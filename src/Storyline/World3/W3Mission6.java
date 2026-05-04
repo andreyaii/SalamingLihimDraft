@@ -17,12 +17,9 @@ public class W3Mission6 {
         System.out.println("    ======================================================================================================================================================");
         System.out.println();
         sc.nextLine();
-        System.out.println("Your party descends the stairs, alert and vigilant of any ambushes. You reached another floor, dark and empty.\n" +
-                "Only the light on the stairs brightens the place. Your party prepares in your attack stances as you feel that you’re surrounded in the shadows.\n" +
-                "You turn to Kheila with a knowing look, she nods in understanding and raises her staff.\n" +
-                "She casts a spell of light and the Babaylans hiding in the shadows are revealed.");
+        System.out.println("Wary of the darkness, Kheila casts a spell of light and the Babaylans hiding in the shadows are revealed.");
         sc.nextLine();
-        System.out.println("[You have encountered 2 Babaylans. Please choose a target and an attack.]");
+        System.out.println("[You have encountered 8 Babaylans. Please choose a target and an attack.]");
         List<Enemy> bosses = EnemyFactory.spawnBosses(EnemyType.ERIKA, 1);
         List<Enemy> enemies = EnemyFactory.spawnEnemies(EnemyType.ERIKA2, 2);
         List<Enemy> enemies1 = EnemyFactory.spawnEnemies(EnemyType.HUMANS, 2);
@@ -44,8 +41,6 @@ public class W3Mission6 {
         sc.nextLine();
         System.out.println("Andrea: Don’t listen to her, Kheila! You’re doing the right thing. You don’t need anyone’s forgiveness.");
         sc.nextLine();
-        System.out.println("Kheila looks at Andrea weakly then nods her head with conviction.");
-        sc.nextLine();
         System.out.println(player.name + ": Andrea’s right, Kheila. But will you be alright when facing Erika? If that Babaylan is to be believed, it appears the two of you were close.");
         sc.nextLine();
         System.out.println("Kheila: We used to be the best of friends. But I’ll be alright. I can’t let Erika continue down this road.");
@@ -60,6 +55,7 @@ public class W3Mission6 {
         sc.nextLine();
         System.out.println("Kheila's shout catches her attention, and Erika looks up, her eyes burning with divine fury.");
         sc.nextLine();
+
         System.out.println("Erika: So… you’re the Fool wielding the goddess’s toy. Do you even know whose war you’re fighting?");
         sc.nextLine();
         System.out.println("Kheila: You betrayed our kin! You were supposed to protect the balance, not destroy it!");
@@ -76,7 +72,7 @@ public class W3Mission6 {
         sc.nextLine();
         System.out.println(player.name + ": Power in exchange for obedience. You’ve been used, Erika.");
         sc.nextLine();
-        System.out.println("Erika: Ridiculous!");
+        System.out.println("Erika: Lies!");
         sc.nextLine();
         System.out.println("Andrea: They were never your allies, Erika. They were waiting to take it all. Mogul, Biringan, even your people.");
         sc.nextLine();
@@ -88,6 +84,8 @@ public class W3Mission6 {
                            "A chimera that's part woman, part shadow flame.");
         sc.nextLine();
 
+        System.out.println("[You have angered the leader of the Babaylans. Choose your attack.]");
+        sc.nextLine();
         survived = battle.startBattle(player, bosses, 3, true);
 
         if (!survived) {
@@ -123,6 +121,8 @@ public class W3Mission6 {
         System.out.println("The runes flare. From the walls emerge armored silhouettes. Human soldiers wielding weapons that glow with stolen magic.");
         sc.nextLine();
 
+        System.out.println("[You have encountered 3 humans, Please choose a target and an attack.]");
+        sc.nextLine();
         survived = battle.startBattle(player, enemies1, 3, false);
 
         if (!survived) {

@@ -43,12 +43,6 @@ Main {
         Intro3.intro3(player);
         if (!W3Mission1.w3mission1(player)) return;
         Shop.enterShop(player);
-        W3Mission2.w3mission2(player);
-
-
-        Shop.enterShop(player);
-        W3Mission3.w3mission3(player);
-        Shop.enterShop(player);
         if (!W3Mission4.w3mission4(player)) return;
         Shop.enterShop(player);
         W3Mission5.w3mission5(player);

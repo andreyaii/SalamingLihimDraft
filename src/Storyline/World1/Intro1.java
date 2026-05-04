@@ -37,9 +37,8 @@ public class Intro1 {
                            "With this in mind, you set out to look for clues and follow the trail left behind by the ones threatening to devour the light \n" +
                            "of the city. You roam about the place and decide to start your search in the most well-populated area of town, the marketplace.\n");
 
-        System.out.println("Your feet carry you through the crowded streets, expertly maneuvering between the merchants bustling about with their wares.\n" +
-                           "You breathe a sigh of relief after you reach a less populated area.\n" +
-                           "But just as you stop to relax, you hear a scream.");
+
+        System.out.println("You delve deep into the dark alley, and just as you were thinking that it was too peaceful, you hear a cry of distress.\n");
         System.out.println();
         DialogueUtils.pause();
     }

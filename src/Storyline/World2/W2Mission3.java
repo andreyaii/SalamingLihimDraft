@@ -19,13 +19,10 @@ public class W2Mission3 {
         sc.nextLine();
 
         System.out.println("The tambalan points you toward the east, where the marshland breaks into cracked stone and sunken ruins.");
-        System.out.println("The ruins reek of history, but not the noble kind.");
-        System.out.println("This was once a settlement before it was swallowed by Mogul centuries ago, its people long since devoured or transformed into grotesque beings.");
         sc.nextLine();
-        System.out.println("At the center of the ruins, you see it.\nA faint glow inside a crumbling forge, fire still alive where no fire should exist.");
+        System.out.println("At the center of it all, you see a faint glow inside a crumbling forge, fire still alive where no fire should exist.");
         sc.nextLine();
-        System.out.println("An old man steps out from the shadows of the forge. His hair is silver, his arms corded with muscle, his leather apron smeared with soot and blood.");
-        System.out.println("His gaze is sharp, unwavering. Before you can voice out your intent, the Pandai beats you to it.");
+        System.out.println("An old man steps out from the shadows of the forge.");
         sc.nextLine();
         System.out.println("Pandai: I know why you've come.");
         sc.nextLine();
@@ -60,9 +57,7 @@ public class W2Mission3 {
         sc.nextLine();
         System.out.println("Pandai: Congratulations. You may yet survive this place.");
         sc.nextLine();
-        System.out.println("He returns to the forge, hammering the air itself, shaping something unseen.");
-        System.out.println("Slowly, metal begins to form, glowing with unnatural light.");
-        System.out.println("The weapon takes shape—a bolo infused with Mogul’s darkness, yet burning with an ember of the eternal flame that has blessed the Pandai.");
+        System.out.println("He disappears inside the forge and returns with a weapon as dark as Mogul, \nyet burning with an ember of the eternal flame that has blessed the Pandai.");
         sc.nextLine();
         System.out.println("Pandai: Here, give this to your friend. She has a will made of iron. In her hands, this bolo will find its true strength.");
         sc.nextLine();

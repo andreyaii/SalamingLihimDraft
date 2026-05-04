@@ -18,91 +18,12 @@ public class W3Mission5 {
         System.out.println("             ==================================================================================================================================");
         System.out.println();
         sc.nextLine();
-        System.out.println("The moonlight filters through cracks in the roots above, painting silver streaks across the cave floor.\n" +
-                           "The air feels alive. It is breathing, whispering, remembering.\n");
-        System.out.println("You step through the threshold, and the world falls silent. The air grows cold, thick with the scent of\n" +
-                           "damp soil and iron. The walls are made of the twisting roots of the Balete Tree, pulsing faintly like veins\n" +
-                           "running through a living entity.\n");
+        System.out.println("Slowly, you descend the stairs, and as you step through the threshold, the world falls silent.\n" +
+                        "The air grows cold, thick with the scent of damp soil and iron. The walls are made of the twisting roots of the Balete Tree,\n" +
+                         "pulsing faintly like veins running through a living entity.");
         System.out.println("You press forward. Every corridor bends in strange, impossible ways. Paths you’ve taken seem to vanish \n" +
                            "behind you and bulging ancient eyes open from their slumber as you pass.You realize something as the walls close\n" +
                            "in around you: this place means to swallow you whole.\n");
-        sc.nextLine();
-        System.out.println("Section 1: The Ghastly Path");
-        sc.nextLine();
-        System.out.println("As you step deeper, voices echo around you. Some sound like lost loved ones, while others sound like the\n" +
-                           "vengeful screams of enemies you’ve slain.");
-
-        sc.nextLine();
-        System.out.println("[1] Follow the voices.\n[2] Ignore them and keep going.\n");
-
-        while (true) {
-            try {
-                System.out.print("Enter your choice: ");
-                choice = sc.nextInt();
-
-                if (choice == 1) {
-                    System.out.println("You see your past painful memories until Kheila snaps you out of it.");
-                    sc.nextLine();
-                    System.out.println("Kheila: Don’t listen! The maze feeds on regret!");
-                    sc.nextLine();
-                    System.out.println("(You lose time, but gain awareness of illusions.)");
-                    break;
-                } else if (choice == 2) {
-                    System.out.println("The whispers fade. You find a faint trail of glowing dust that marks the safe path.");
-                    sc.nextLine();
-                    break;
-                } else {
-                    System.out.println("❌ Invalid choice. Please enter 1 or 2.\n");
-
-                }
-            } catch (NumberFormatException e) {
-                System.out.println("❌ Invalid input. Please enter 1 or 2.\n");
-            } catch (InputMismatchException e) {
-                System.out.println("❌ Invalid input. Please enter 1 or 2.\n");
-                sc.nextLine();
-            } catch (Exception e) {
-                System.out.println("⚠️ An unexpected error occurred: " + e.getMessage());
-                sc.nextLine();
-            }
-        }
-
-        System.out.println("Section 2: The Split Passage");
-        sc.nextLine();
-        System.out.println("Three tunnels stretch ahead, each marked with symbols carved into the stone: a moon, a sun, and a star.");
-        sc.nextLine();
-        System.out.println("[1] Enter the Star path.");
-        System.out.println("[2] Enter the Sun path.");
-        System.out.println("[3] Enter the Moon path.");
-
-        while (true) {
-            try {
-                System.out.print("Enter your choice: ");
-                choice = sc.nextInt();
-
-                if (choice == 1) {
-                    System.out.println("Star Path: The tunnel collapses behind you. You barely escape.");
-                    break;
-                } else if (choice == 2) {
-                    System.out.println("Sun Path: The walls begin to burn with light. You retreat.");
-                    break;
-                } else if (choice == 3) {
-                    System.out.println("Moon Path: The Blade of Bulan hums and glows faintly. You’re on the right path.");
-                    break;
-                } else {
-                    System.out.println("❌ Invalid choice. Please enter 1, 2, or 3.\n");
-                }
-
-            } catch (InputMismatchException e) {
-                System.out.println("❌ Invalid input. Please enter 1, 2, or 3.\n");
-                sc.nextLine();
-            } catch (Exception e) {
-                System.out.println("⚠️ An unexpected error occurred: " + e.getMessage());
-                sc.nextLine();
-            }
-        }
-
-        System.out.println();
-        System.out.println("Section 3: The Door of Sacrifice");
         sc.nextLine();
         System.out.println("At the heart of the maze stands a massive stone door carved with lunar sigils.\n" +
                            "A ghostly figure materializes before you. The White Lady of Balete Drive, her form both sorrowful and radiant.");
@@ -111,13 +32,7 @@ public class W3Mission5 {
         sc.nextLine();
         System.out.println(player.name + ": We’ve come this far. Tell us what must be done.");
         sc.nextLine();
-        System.out.println("White Lady: The door opens only to one who understands sacrifice. Not of spirit, not of pride – but of the body that carries your will.");
-        sc.nextLine();
-        System.out.println("Andrea steps forward, alarmed.");
-        sc.nextLine();
-        System.out.println("Andrea: What do you mean? What kind of sacrifice?");
-        sc.nextLine();
-        System.out.println("White Lady: To cross this threshold, you must surrender half of what sustains you. Either your life-force or the moon-forged mana that fuels your power.");
+        System.out.println("White Lady: The door only opens to one who understands sacrifice, you must surrender half of what sustains you. Either your life-force or the moon-forged mana that fuels your power.");
         sc.nextLine();
         System.out.println("Kheila’s voice trembles.");
         sc.nextLine();
@@ -161,12 +76,8 @@ public class W3Mission5 {
         sc.nextLine();
         System.out.println("White Lady: You have chosen well. The Blade now mirrors your truth. Go, bearer of the moon’s will.");
         sc.nextLine();
-        System.out.println("The stone door trembles and splits open, revealing a stairway bathed in cold blue light.");
-        sc.nextLine();
-        System.out.println("Andrea: That must be it. The Mistress’s Lair.");
-        sc.nextLine();
-        System.out.println("Kheila: Be ready. What waits beyond that door is not just Erika, the Mistress, but everything she believes in.");
-        System.out.println();
+        System.out.println("With those parting words, the White Lady disappears, taking every ounce of light with her.");
+
         DialogueUtils.pause();
     }
 }
