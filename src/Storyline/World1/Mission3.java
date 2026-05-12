@@ -23,13 +23,11 @@ public class Mission3 {
         DialogueUtils.pause();
         System.out.println("There you see tiyanaks moving the wagon full of unconscious bodies of enkantos and diwatas.");
         System.out.println("They are led by the giant entity, the Bungisngis.");
-        System.out.println("You move towards the group quietly, hiding behind the bodies of trees, and observe what they might do.");
+        System.out.println("You move towards the group quietly, hiding behind the bodies of trees.");
         DialogueUtils.pause();
         System.out.println();
-        System.out.println("The Bungisngis smiles wide and turns its eyes upon the bodies of the diwatas.");
-        System.out.println("You watch in nervous anticipation as the Bungisngis walks towards the wagon,");
-        System.out.println("and ready yourself with your weapon as the giant reaches out to the wagon and raises the limp body of a diwata.");
-        System.out.println("The Bungisngis opens its mouth, salivating at the sight of its meal.");
+        System.out.println("The Bungisngis smiles wide as it reaches out to the wagon and raises the limp body of a diwata.");
+        System.out.println("Its mouth opens, salivating at the sight of its meal.");
         DialogueUtils.pause();
         System.out.println("Just then, a whirl of wind slices the skin of the giant’s arm, causing it to drop the unconscious diwata back on the wagon.");
         System.out.println("Another diwata, the one who summoned the wind, rises, and you step out of hiding and move yourself between the wagon and the group of enemies.");
