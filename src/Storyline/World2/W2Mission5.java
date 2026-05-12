@@ -99,22 +99,11 @@ public class W2Mission5 {
         System.out.println("Leaving you with more questions, Tria draws her last breath.");
         sc.nextLine();
 
-        System.out.println("You ponder upon the clue Tria left, the possible mastermind behind the plan to dominate Biringan City.");
-        sc.nextLine();
-
-        System.out.println("Andrea: Should we investigate the Babaylans? Their base is in Mt. Kanatuan.");
-        sc.nextLine();
-
-        System.out.println(player.name + ": I think we should. Even if Tria lied, this is our only clue.");
+        System.out.println("Andrea: We should head to Mt. Kanatuan and investigate the Babaylans.");
         sc.nextLine();
 
         System.out.println("You make your way towards the end of the tunnel, and the night air lingers thick\nand cold as you emerge into another realm just beyond Mogul.");
-        sc.nextLine();
-
-        System.out.println(player.name + ": Where are we?");
-        sc.nextLine();
-
-        System.out.println("The path ahead stretches into darkness once more. But somewhere beyond it lies Mt. Kanatuan. And with it, the truth behind the Babaylan’s sinister plan.");
+        System.out.println("Here lies Mt. Kanatuan. And with it, the truth behind the Babaylan’s sinister plan.");
         System.out.println();
         DialogueUtils.pause();
 

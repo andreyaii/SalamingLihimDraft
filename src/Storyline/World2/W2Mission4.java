@@ -17,13 +17,7 @@ public class W2Mission4 {
         System.out.println("======================================================================================================================================================================");
         System.out.println();
 
-        System.out.println("You make your way back to Andrea and the Tambalan.\nThough pale, Andrea’s eyes open the moment she hears your footsteps.");
-        sc.nextLine();
-
-        System.out.println("Andrea: You’re back. Did you find it?");
-        sc.nextLine();
-
-        System.out.println("You kneel and present the Pandai’s creation.\nAndrea’s hand trembles as she reaches for it, but the moment her fingers curl around the hilt,\nthe blade glows brightly in the darkness.");
+        System.out.println("You make your way back to Andrea and the Tambalan, and present the Pandai’s creation.\nAndrea’s hand trembles as she reaches for it, but the moment her fingers curl around the hilt,\nthe blade glows brightly in the darkness.");
         sc.nextLine();
 
         System.out.println("Tambalan: Good. The sword knows its master.\nYou must go now, but listen well. Find the Aswang’s lair by following the signs of their gluttony.\nBeware their trickery, for the farther away they sound, the closer they actually are.");

@@ -22,8 +22,7 @@ public class W3Mission5 {
                         "The air grows cold, thick with the scent of damp soil and iron. The walls are made of the twisting roots of the Balete Tree,\n" +
                          "pulsing faintly like veins running through a living entity.");
         System.out.println("You press forward. Every corridor bends in strange, impossible ways. Paths you’ve taken seem to vanish \n" +
-                           "behind you and bulging ancient eyes open from their slumber as you pass.You realize something as the walls close\n" +
-                           "in around you: this place means to swallow you whole.\n");
+                           "behind you and bulging ancient eyes open from their slumber as you pass.");
         sc.nextLine();
         System.out.println("At the heart of the maze stands a massive stone door carved with lunar sigils.\n" +
                            "A ghostly figure materializes before you. The White Lady of Balete Drive, her form both sorrowful and radiant.");
@@ -33,8 +32,6 @@ public class W3Mission5 {
         System.out.println(player.name + ": We’ve come this far. Tell us what must be done.");
         sc.nextLine();
         System.out.println("White Lady: The door only opens to one who understands sacrifice, you must surrender half of what sustains you. Either your life-force or the moon-forged mana that fuels your power.");
-        sc.nextLine();
-        System.out.println("Kheila’s voice trembles.");
         sc.nextLine();
         System.out.println("Kheila: Half? That’s– that’s irreversible.");
         sc.nextLine();

@@ -53,11 +53,7 @@ public class W2Mission3 {
         player.resetCooldowns();
         sc.nextLine();
 
-        System.out.println("Once the battle is won, the Pandai approaches you, impressed.");
-        sc.nextLine();
-        System.out.println("Pandai: Congratulations. You may yet survive this place.");
-        sc.nextLine();
-        System.out.println("He disappears inside the forge and returns with a weapon as dark as Mogul, \nyet burning with an ember of the eternal flame that has blessed the Pandai.");
+        System.out.println("Once the battle is won, the Pandai approaches you with a dark blade in his hands.");
         sc.nextLine();
         System.out.println("Pandai: Here, give this to your friend. She has a will made of iron. In her hands, this bolo will find its true strength.");
         sc.nextLine();
@@ -65,17 +61,11 @@ public class W2Mission3 {
         sc.nextLine();
         System.out.println(player.name + ": Thank you.");
         sc.nextLine();
-        System.out.println("Pandai: You and your friend proved your worth. There is no need for gratitude. Do you know where you must go next?");
+        System.out.println("Pandai: There is no need for gratitude. Do you know where you must go next?");
         sc.nextLine();
-        System.out.println(player.name + ": Yes. I must find the Aswang’s lair so that I can talk to their leader.");
+        System.out.println(player.name + ": Yes. I must find the Aswang’s lair so that I can talk to their leader and get to the bottom of this wretched scheme.");
         sc.nextLine();
-        System.out.println(player.name + ": I need to know what they plan to do with the Diwatas and Encantos they’ve had abducted.");
-        sc.nextLine();
-        System.out.println(player.name + ": I must get to the bottom of this wretched scheme.");
-        sc.nextLine();
-        System.out.println("Pandai: Very good. Mogul is a place that cannot be navigated, but the tambalan can point you to the right direction,");
-        sc.nextLine();
-        System.out.println("Pandai: and the blessed bolo will lead the way. Good luck, young hero.");
+        System.out.println("Pandai: Very good. The tambalan can point you to the right direction, and the blessed bolo will lead the way. Good luck, young hero.");
         System.out.println();
         DialogueUtils.pause();
         return true;

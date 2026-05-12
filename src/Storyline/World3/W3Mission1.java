@@ -23,8 +23,6 @@ public class W3Mission1 {
 
         System.out.println("After persevering through Mogul’s suffocating darkness for days on end, Mt. Kanatuan’s gentle sunrise leaves you nearly blinded.");
         sc.nextLine();
-        System.out.println("Andrea: We should search our surroundings for clues and any signs of life.");
-        sc.nextLine();
         System.out.println("You and Andrea begin to cautiously follow the trail and eventually end up in a small clearing with a fallen tree in the middle.\nYou scan the area and see a small, ragged satchel beside the tree trunk. ");
         sc.nextLine();
 
@@ -56,7 +54,7 @@ public class W3Mission1 {
         sc.nextLine();
 
         if (player.isAlive()) {
-            System.out.println("After the tedious fight with the tiyanak, you and Andrea sit by the side of a stream to recuperate and recover your energy.");
+            System.out.println("After the tedious fight with the tiyanak, you and Andrea sit by the side of a stream to recover your energy.");
             sc.nextLine();
 
             player.rest();
@@ -66,7 +64,7 @@ public class W3Mission1 {
             sc.nextLine();
             System.out.println("???: Over there!!! Spread out and search the area. That traitor couldn't have gone far.");
             sc.nextLine();
-            System.out.println("Before they can come any closer, you and Andrea move to take cover in a secluded area behind some thick bushes.\nSimultaneously, you and Andrea still your breaths when you hear footsteps stop right in front of your hiding place.");
+            System.out.println("Before they can come any closer, you and Andrea move to take cover in a secluded area behind some thick bushes.");
             sc.nextLine();
             System.out.println("???: What will we do with Kheila when we find her, Commander?");
             sc.nextLine();
@@ -86,9 +84,7 @@ public class W3Mission1 {
             sc.nextLine();
             System.out.println(player.name + ": Let’s go. It’s definitely worth a try.");
             sc.nextLine();
-            System.out.println("You follow the tracks of deep footprints, broken branches, and streaks of blood winding down a narrow path into the lower forest.\nThe air grows dense with mist, and the once-cheerful songs of birds fade into silence.");
-            sc.nextLine();
-            System.out.println("After several minutes, you spot flickering lights ahead—a camp.");
+            System.out.println("You follow the tracks of deep footprints, and after several minutes, you spot flickering lights ahead—a camp.");
             System.out.println("You crouch behind a fallen log. In the clearing, several Babaylans circle a campfire.\nBound and gagged near the flames sits a woman with matted hair and bruised wrists.");
             sc.nextLine();
             System.out.println("Andrea: That must be her… Kheila.");
